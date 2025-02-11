@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Learnify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Learnify</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-filters">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+            </select>
+
+            <label for="difficulty">Filter by Difficulty:</label>
+            <select id="difficulty">
+                <option value="all">All</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </section>
+
+        <section class="courses-list">
+            <div class="course-card" data-category="programming" data-difficulty="beginner">
+                <img src="images/html.png" alt="HTML Course">
+                <h3>HTML & CSS Basics</h3>
+                <p>Learn the fundamentals of web design with HTML and CSS.</p>
+                <p><strong>Difficulty:</strong> Beginner</p>
+                <a href="course-detail-html-css.html"><button class="learn-more">Learn More</button></a>
+            </div>
+
+            <div class="course-card" data-category="programming" data-difficulty="intermediate">
+                <img src="images/js.png" alt="JavaScript Course">
+                <h3>JavaScript Essentials</h3>
+                <p>Master the basics of JavaScript and dynamic web development.</p>
+                <p><strong>Difficulty:</strong> Intermediate</p>
+                <a href="course-detail-js.html"><button class="learn-more">Learn More</button></a>
+            </div>
+
+            <div class="course-card" data-category="design" data-difficulty="beginner">
+                <img src="images/uiux.png" alt="UI/UX Course">
+                <h3>UI/UX Fundamentals</h3>
+                <p>Understand the principles of user interface and user experience design.</p>
+                <p><strong>Difficulty:</strong> Beginner</p>
+                <a href="course-detail-uiux.html"><button class="learn-more">Learn More</button></a>
+            </div>
+
+            <div class="course-card" data-category="business" data-difficulty="advanced">
+                <img src="images/marketing.png" alt="Marketing Course">
+                <h3>Digital Marketing Strategies</h3>
+                <p>Learn advanced digital marketing tactics and SEO.</p>
+                <p><strong>Difficulty:</strong> Advanced</p>
+                <a href="course-detail-marketing.html"><button class="learn-more">Learn More</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learnify. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

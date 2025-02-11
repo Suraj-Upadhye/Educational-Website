@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz - Learnify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Learnify</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-container">
+            <h2>Interactive Quiz</h2>
+            <p id="timer">Time Left: <span id="time">30</span> sec</p>
+            
+            <div id="quiz">
+                <!-- Quiz questions will be inserted here dynamically -->
+            </div>
+
+            <button id="submit-btn">Submit</button>
+            <button id="retry-btn" style="display: none;">Retry</button>
+
+            <div id="result" style="display: none;">
+                <h3>Your Score: <span id="score"></span>/5</h3>
+                <p id="feedback"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learnify. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Learnify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Learnify</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Educational Resources</h2>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for resources...">
+            <button onclick="searchResources()">Search</button>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <label for="category">Filter by Subject:</label>
+            <select id="category" onchange="filterResources()">
+                <option value="all">All</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="coding">Coding</option>
+            </select>
+        </div>
+
+        <!-- Resources List -->
+        <section class="resources-list">
+            <div class="resource-item" data-category="math">
+                <h3>Algebra Basics</h3>
+                <p>A beginner-friendly guide to algebra fundamentals.</p>
+                <a href="resources/algebra_basics.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="math">
+                <h3>Calculus Made Easy</h3>
+                <p>Understand the core concepts of calculus with simple explanations.</p>
+                <a href="resources/calculus_guide.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="science">
+                <h3>Physics Fundamentals</h3>
+                <p>An introduction to classical physics principles.</p>
+                <a href="resources/physics_fundamentals.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="science">
+                <h3>Chemistry Essentials</h3>
+                <p>A complete guide to chemical reactions and properties.</p>
+                <a href="resources/chemistry_essentials.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="coding">
+                <h3>HTML & CSS Guide</h3>
+                <p>Learn the basics of HTML & CSS for web development.</p>
+                <a href="resources/html_css_guide.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="coding">
+                <h3>Python Programming</h3>
+                <p>A beginner’s guide to Python with exercises.</p>
+                <a href="resources/python_basics.pdf" download>Download PDF</a>
+            </div>
+
+            <div class="resource-item" data-category="coding">
+                <h3>JavaScript Cheat Sheet</h3>
+                <p>A quick reference guide for JavaScript syntax and functions.</p>
+                <a href="resources/javascript_cheatsheet.pdf" download>Download PDF</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learnify. All Rights Reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
